@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Quejas</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="ytrd.jpg" alt="" width="100px">
+
+        <nav id="mainNav">
+
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <form action="insertar.php" method="POST">
+            <p>
+                nombre: <input type="text" id="nombre" name="nombre">
+            </p>
+
+            <p>
+                Telefono: <input type="number" id="telefono" name="telefono">
+            </p>
+
+            <p>
+                E-mail: <input type="text" id="email" name="email">
+            </p>
+
+            <p>
+
+                Opinion/Sugerencia:
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+            </p>
+            <!--p><input id="condiciones" type="checkbox">Acepto los terminos y condiciones </p-->
+            <p><a href="quejas.html"></a><input id="enviar" type="submit" value="Enviar"></a></p>
+
+            
+
+
+
+        </form>
+
+    </main>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--script src="js/scripts.js"></script-->
+</body>
+
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="vieport" content="width-device-width, initial-scale-1.0"/>
+        <title>Login y registro - Amstendam</title>
+        <link rel="stylesheet" href="./estilos.css"/>
+    </head>
+    <body>
+
+        <main>
+
+            <div class="contenedor__todo">
+
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿ya tienes una cuenta?</h3>
+                        <p>inicia sesion para entrar en la pagina</p>
+                        <button id="btn__iniciar-sesion">iniciar-sesion</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿aun no tienes una cuenta?</h3>
+                        <p>registrate para que puedas iniciar secion</p>
+                        <button id="btn__registrarse">Registrarse</button>
+                    </div>
+
+                </div>
+                <div class="contenedor__login-register">
+                    <form action="" class="formulario__login" method="POST">
+                        <h2>iniciar sesion</h2>
+                        <input type="text" placeholder="correo electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="button" value="entrar" onclick="document.form_usuarios.action='entrada.php'; document.form_usuarios.submit()"/>
+                    </form>
+
+                    <form class="formulario__register" id="form_usuarios" name="form_usuarios" method="POST">
+                        <h2>Registrar</h2>
+                        <input type="text" id="nombre" name="nombre" placeholder="nombre completo"/>
+                        <input type="text" placeholder="correo electronico" id="email" name="email"/>
+                        <input type="text" placeholder="usuario" id="usuario" name="usuario"/>
+                        <input type="password" placeholder="contraseña" id="password" name="password"/>
+                        <li><a href="acceso.html"></a><input type="button" value="registrar" onclick="document.form_usuarios.action='php/registrar.php'; document.form_usuarios.submit()"/></a></li>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
